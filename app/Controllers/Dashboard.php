@@ -10,7 +10,7 @@ class Dashboard extends BaseController
         $db = \Config\Database::connect();
 
         if ($this->request->getMethod() == 'post') {
-            $db->query("INSERT INTO stocks(stock, price, shares, exchange, user_id) VALUES (\"" . $this->request->getPost('stock') . "\", " . $this->request->getPost('price') . ", ". $this->request->getPost('shares') . ", ". $this->request->getPost('exchange') . ", ". session()->get('id') . ")");
+            $db->query("INSERT INTO stocks(stock, price, shares, exchange, user_id) VALUES (\"" . $this->request->getPost('stock') . "\", " . $this->request->getPost('price') . ", ". $this->request->getPost('shares') . ", \"". $this->request->getPost('exchange') . "\", ". session()->get('id') . ")");
 
             return redirect()->to('dashboard');
         }
