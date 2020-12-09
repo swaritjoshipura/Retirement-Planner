@@ -18,6 +18,26 @@
                         <li class="nav-item dashboard ?>">
                             <a class="nav-link"  href="./dashboard">Dashboard</a>
                         </li>
+                        <li class="nav-item dashboard ?>">
+                            <a class="nav-link"  href="./div_info">Enter Stock Info</a>
+                        </li>
+                        <li class="nav-item dashboard ?>">
+                            <a class="nav-link"  href="./div_manager">Enter Dividend Info</a>
+                        </li>
+                        <li class="nav-item dashboard ?>">
+                            <a class="nav-link"  href="./div_income">Dividend Income Analyzer</a>
+                        </li>
+                        <li class="nav-item dashboard ?>">
+                            <a class="nav-link"  href="./recurring_purchases">Recurring Purchases</a>
+                        </li>
+                        <li class="nav-item dashboard ?>">
+                            <a class="nav-link"  href="./recurring_income">Recurring Income</a>
+                        <li class="nav-item dashboard ?>">
+                            <a class="nav-link"  href="./one_time_purchases">One Time Payments</a>
+                        </li>
+                        <li class="nav-item dashboard ?>">
+                            <a class="nav-link"  href="./one_time_income">One Time Income</a>
+                        </li>
                         <li class="nav-item profile' ?>">
                             <a class="nav-link" href="./profile">Profile</a>
                         </li>
@@ -28,5 +48,7 @@
                         </li>
                     </ul>
                 <?php endif; ?>
+
+                <!--(SELECT *, ROUND((DATEDIFF(date_received, date_purchased) / 365) + 1) years from dividends NATURAL JOIN stocks WHERE user_id=2)-->
     </head>
 <body>
