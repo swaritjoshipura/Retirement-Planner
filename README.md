@@ -1,6 +1,6 @@
-# CS348_Project
+# Retirement Planner
 
-Our project for the CS348 Project - Fall 2020.
+This is our retirment planner. 
 
 Vidur 
 Pranav 
